@@ -50,7 +50,6 @@ carouselControlNext.addEventListener('click', function(e) {
   carouselItems[activeItemIndex].classList.add('active');
 });
 
-
 showSlides();
 
 
