@@ -51,3 +51,10 @@ carouselControlNext.addEventListener('click', function(e) {
 });
 
 
+showSlides();
+
+
+const gambar = document.getElementsByTagName('img')[0];
+gambar.addEventListener('click', function() {
+    alert('Anda menekan gambar!');
+});
