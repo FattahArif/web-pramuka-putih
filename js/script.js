@@ -13,59 +13,70 @@ window.onscroll = function () {
       scrollAwal = scrollAkhir
 }
 
-const gambar1 = document.querySelector('#gambar-event1')
-const content1 = document.querySelector('#judul-event1')
-const gambar2 = document.querySelector('#gambar-event2')
-const content2 = document.querySelector('#judul-event2')
-const gambar3 = document.querySelector('#gambar-event3')
-const content3 = document.querySelector('#judul-event3')
+//  Slider
 
+// Get carousel element
+var carousel = document.querySelector('.carousel');
 
-gambar1.onmouseenter = function() {
-    content1.classList.remove('hilang')
+// Get carousel items
+var carouselItems = carousel.querySelectorAll('.carousel-item');
+
+// Get carousel controls
+var carouselControlPrev = carousel.querySelector('.carousel-control-prev');
+var carouselControlNext = carousel.querySelector('.carousel-control-next');
+
+// Set initial active item
+var activeItemIndex = 0;
+carouselItems[activeItemIndex].classList.add('active');
+
+// Initialize the interval variable
+var interval;
+
+// Add event listener to prev control
+carouselControlPrev.addEventListener('click', function(e) {
+  e.preventDefault();
+  // Clear the previous interval
+  clearInterval(interval);
+  carouselItems[activeItemIndex].classList.remove('active');
+  activeItemIndex--;
+  if (activeItemIndex < 0) {
+    activeItemIndex = carouselItems.length - 1;
+  }
+  carouselItems[activeItemIndex].classList.add('active');
+  // Start the interval again
+  interval = setInterval(showNextSlide, 8000);
+});
+
+// Add event listener to next control
+carouselControlNext.addEventListener('click', function(e) {
+  e.preventDefault();
+  // Clear the previous interval
+  clearInterval(interval);
+  carouselItems[activeItemIndex].classList.remove('active');
+  activeItemIndex++;
+  if (activeItemIndex >= carouselItems.length) {
+    activeItemIndex = 0;
+  }
+  carouselItems[activeItemIndex].classList.add('active');
+  // Start the interval again
+  interval = setInterval(showNextSlide, 8000);
+});
+
+// Function to show next slide
+function showNextSlide() {
+  carouselItems[activeItemIndex].classList.remove('active');
+  activeItemIndex++;
+  if (activeItemIndex >= carouselItems.length) {
+    activeItemIndex = 0;
+  }
+  carouselItems[activeItemIndex].classList.add('active');
 }
 
-gambar1.onmouseleave = function () {
-    content1.classList.add('hilang')
-}
+// Start the interval for automatic slideshow
+interval = setInterval(showNextSlide, 8000);
 
-content1.onmouseenter = function() {
-    content1.classList.remove('hilang')
-}
 
-content1.onmouseleave = function () {
-    content1.classList.add('hilang')
-}
-
-gambar2.onmouseenter = function() {
-    content2.classList.remove('hilang')
-}
-
-gambar2.onmouseleave = function () {
-    content2.classList.add('hilang')
-}
-
-content2.onmouseenter = function() {
-    content2.classList.remove('hilang')
-}
-
-content2.onmouseleave = function () {
-    content2.classList.add('hilang')
-}
-
-gambar3.onmouseenter = function() {
-    content3.classList.remove('hilang')
-}
-
-gambar3.onmouseleave = function () {
-    content3.classList.add('hilang')
-}
-
-content3.onmouseenter = function() {
-    content3.classList.remove('hilang')
-}
-
-content3.onmouseleave = function () {
-    content3.classList.add('hilang')
-}
-
+const gambar = document.getElementsByTagName('img')[0];
+gambar.addEventListener('click', function() {
+    alert('Anda menekan gambar!');
+});

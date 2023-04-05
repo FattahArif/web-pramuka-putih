@@ -139,6 +139,7 @@ top: 90px;
   font-family: sans-serif 'poppins';
   font-size: 35px;
   text-align: center;
+  margin-top: 50px;
 }
 
 .materi .gambar img{
@@ -195,7 +196,117 @@ background: #B07E4F;
 border-radius: 10px;
 }
 
+h1 {
+  color: #000;
+  font-family: sans-serif 'Poppins';
+}
 
+.pengertian  h1{
+  font-size: 30px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.tujuan h1{
+  font-size: 30px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.manfaat  h1{
+  font-size: 30px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.macam-simpul h1{
+  font-size: 30px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.macam-ikatan h1{
+  font-size: 30px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.contoh-model h1{
+  font-size: 30px;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+.macam-simpul ol {
+  color: #000;
+  color: #000;
+  font-family: sans-serif 'Poppins';
+  font-size:18px;
+  margin-top: 30px;
+  padding-left: 50px;
+  line-height: 50px;
+}
+
+.macam-simpul ol p {
+  margin-top: -20px;
+}
+
+.macam-ikatan ul {
+  color: #000;
+  color: #000;
+  font-family: sans-serif 'Poppins';
+  font-size:18px;
+  margin-top: 30px;
+  padding-left: 50px;
+  line-height: 50px;
+}
+
+.macam-ikatan ul p {
+  margin-top: -5px;
+  margin-bottom: 20px;
+
+  line-height: 25px;
+}
+
+.contoh-model ul {
+  color: #000;
+  color: #000;
+  font-family: sans-serif 'Poppins';
+  font-size:18px;
+  margin-top: 30px;
+  padding-left: 50px;
+  line-height: 50px;
+}
+
+.contoh-model ul p {
+  margin-top: -20px;
+  margin-bottom: 20px;
+  /* margin-left: 330px; */
+  font-size: 16px;
+  text-align: center;
+}
+
+.contoh-model h3 {
+  font-size: 30px;
+}
+
+.contoh-model img {
+  width: 500px;
+  height: 400px;
+  margin-top: 30px;
+  margin-left: 200px;
+  border-radius: 10px;
+  
+}
+
+.manfaat ol{
+  color: #000;
+  font-family: sans-serif 'Poppins';
+  font-size:18px;
+  margin-top: 20px;
+  padding-left: 50px;
+  line-height: 30px;
+}
 .link-materi {
   display: flex;
   margin: 0 auto;
