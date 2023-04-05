@@ -1,20 +1,14 @@
-var slideIndex = 0;
-var slides = document.getElementsByClassName("slider-slide");
+let scrollAwal = window.pageYOffset
 
-function showSlides() {
-  for (var i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  slideIndex++;
-  if (slideIndex > slides.length) {
-    slideIndex = 1;
-  }
-  slides[slideIndex-1].style.display = "block";
-  setTimeout(showSlides, 3000); // Ubah angka 3000 dengan interval waktu yang diinginkan (dalam milidetik)
+window.onscroll = function () {
+    const navbar = document.querySelector('#navbar')
+    let scrollAkhir = window.pageYOffset
+
+    if (scrollAwal > scrollAkhir) {
+        navbar.classList.remove('hide-navbar');
+      } else {
+        navbar.classList.add('hide-navbar');
+      }
+    
+      scrollAwal = scrollAkhir
 }
-
-showSlides();
-
-setInterval(() => {
-  showSlides();
-}, 3000);

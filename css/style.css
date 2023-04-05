@@ -63,8 +63,6 @@ body {
     color: rgb(0, 0, 0);
     word-spacing: -3px;
 
-
-
    
 }
 
@@ -74,17 +72,19 @@ body {
 }
 
 .navbar .navbar-nav ul li{
-    color: #000;
+    color: #000000;
     display: inline-block;
     font-size: 16px;
     margin: 0 1rem;
     font-family: 'Poppins', sans-serif;
+    letter-spacing: 1px;
+    font-style: bold;
 }
 
 .navbar .navbar-nav a {
-    color: #000;
+    color:#000000;
     letter-spacing: 1px;
-    font-style: boldS;
+    font-style: bold;
 }
 
 .navbar .navbar-nav a:hover {
@@ -144,32 +144,24 @@ body {
 
 .hero .content h1 {
     font-family: sans-serif 'Poppins';
-    font-size: 54px;
-    color: rgb(255, 174, 0);
-    text-shadow: 1px 1px 3px rgba(250, 173, 8, 0.5);
+    font-size: 50px;
+    color: rgba(0, 0, 0, 0.74);;
     line-height: 1.5;
     margin-top: 180px;
-    margin-left: 35px;
+    margin-left: 10px;
 }
 .hero .content .Bapak {
     width: 550px;
     height: 700px;
     float: right;
-    margin-top: -350px;
+    margin-top: -300px;
     margin-right: -50px;
     filter: drop-shadow(5px 5px orange)
     
 }
 
-.hero .content h3 {
-    font-size: 30px;
-    font-size: x-large;
-    margin-left: 40px;
-   
-}
-
 .hero .content .apapun {
-    margin-left: 40px;
+    margin-left: 10px;
     width: fit-content;
     color: #000;
     font-family: sans-serif 'Poppins';
@@ -178,8 +170,8 @@ body {
 
 .belajar {
     display: flex;
-    margin-top: -80px;
-    margin-left: -65px;
+    margin-top: -150px;
+    margin-left: -90px;
     flex-direction: row;
     align-items: flex-start;
     gap: 10px;

@@ -1,3 +1,18 @@
+let scrollAwal = window.pageYOffset
+
+window.onscroll = function () {
+    const navbar = document.querySelector('#navbar')
+    let scrollAkhir = window.pageYOffset
+
+    if (scrollAwal > scrollAkhir) {
+        navbar.classList.remove('hide-navbar');
+      } else {
+        navbar.classList.add('hide-navbar');
+      }
+    
+      scrollAwal = scrollAkhir
+}
+
 const gambar1 = document.querySelector('#gambar-event1')
 const content1 = document.querySelector('#judul-event1')
 const gambar2 = document.querySelector('#gambar-event2')
@@ -54,36 +69,3 @@ content3.onmouseleave = function () {
     content3.classList.add('hilang')
 }
 
-// var lastScrollTop = 0;
-//     navbar = document.getElementById("navbar")
-// window.addEventListener("scroll",function(){
-//     var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-//     if (scrollTop > lastScrollTop){
-//         navbar.style.top="-80px";
-//     } else {
-//         navbar.style.top="0";
-
-//     }
-//     lastScrollTop = scrollTop;
-// })
-let scrollAwal = window.pageYOffset
-
-window.onscroll = function () {
-    const navbar = document.querySelector('#navbar')
-    let scrollAkhir = window.pageYOffset
-    // console.log("sroll awal: " + scrollAwal)
-    // console.log("sroll akhir: " +scrollAkhir)
-
-    if (scrollAwal > scrollAkhir) {
-        navbar.classList.remove('hide-navbar');
-        // if (window.pageYOffset > 0) {
-        // //   navbar.classList.add('border-b-2');
-        // } else {
-        //   navbar.classList.remove('border-b-2');
-        // }
-      } else {
-        navbar.classList.add('hide-navbar');
-      }
-    
-      scrollAwal = scrollAkhir
-}
