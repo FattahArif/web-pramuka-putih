@@ -292,10 +292,10 @@ ul {
   list-style: none;
 }
 .footer {
-  width: 1360px;
+  width: 1450px;
   margin-top: 580px;
-  margin-left: -20px;
-  margin-right: -20px;
+  margin-left: -55px;
+  margin-right: -55px;
   background-color: #251a11;
   padding: 70px ;
 }
@@ -376,8 +376,8 @@ ul {
     color: rgba(255, 255, 255, 1);
     text-align: center;
     margin-bottom: -20px;
-    margin-right: -20px;
-    margin-left: -20px;
+    margin-right: -55px;
+    margin-left: -55px;
   }
   .container-bawah .fixed-footer {
     bottom: 0;

@@ -259,12 +259,15 @@ body {
 }
 
 .materi h1 {
+    font-family: 'Poppins', sans-serif;
     margin-left: 10px;
     font-size: 30px;
     font-weight: bold;
     letter-spacing: 0.5px;
-    font-style: italic;
-    color: rgb(255, 174, 0);
+    /* font-style: italic;  */
+    /* color: rgb(255, 174, 0); */
+    color: #000000;
+    border-bottom: 2px solid rgb(255, 174, 0);
 }
 
 .materi img{

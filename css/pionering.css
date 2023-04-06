@@ -117,7 +117,7 @@ flex-direction: column;
 margin: 0 auto;
 gap: 20px;
 position: relative;
-width: 70%;
+width: 60%;
 top: 90px;
 }
 
@@ -138,8 +138,14 @@ top: 90px;
   color: #000000;
   font-family: sans-serif 'poppins';
   font-size: 35px;
-  text-align: center;
+  /* text-align: center; */
   margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.materi .judul img {
+  width: 100%;  
+  margin-bottom: 20px;
 }
 
 .materi .gambar img{
@@ -184,7 +190,7 @@ gap: 10px;
 
 width: 245px;
 height: 47px;
-margin-left: 200px;
+margin-left: 240px;
 margin-top: 400px;
 margin-bottom: 40px;
 
@@ -294,7 +300,7 @@ h1 {
   width: 500px;
   height: 400px;
   margin-top: 30px;
-  margin-left: 200px;
+  margin-left: 140px;
   border-radius: 10px;
   
 }
@@ -312,6 +318,7 @@ h1 {
   margin: 0 auto;
     flex-wrap: wrap;
     width: 75%;
+    justify-content: center;
 }
 
 .card-materi {
