@@ -21,7 +21,7 @@ body {
     font-family: 'Poppins' , sans-serif;
     background-color: #fff;
     color: #fff;
-    min-height: 2000px;
+    min-height: 1000px;
 
 
 }
@@ -199,150 +199,85 @@ body {
     transform: scale(1.1, 1.1);
 }
 
-/* event */
-/* .event {
-    display: flex;
-    justify-content: center;
-    height: 100vh;
+/* Materi */
+
+.judul-materi {
     align-items: center;
-    flex-direction: row;
+    display: flex;
+    width: 80%;
+    margin-left: 80px;
+    padding-top: 20px;
+    
 }
 
-.card-event {
-    border: #fff solid;
-    box-shadow: rgba(54, 54, 54, 0.16) 0px 3px 4px, rgba(255,255, 255, 0.16) 0px 3px 4px;
-    margin: 30px;
-    border-radius: 10px;
-    position: relative;
-}
-.card-event img {
-    height:355px;
-    width: 300px;
-    border-radius: 10px;; 
-}
-
-.judul-event {
-    height: 45%;
+.judul {
     display: flex;
-    padding-left: 15px;
-    padding-right: 15px;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 3px;
-    margin-top: -160px;
-    background-color: #222121cc;
     width: 100%;
-    border-radius: 25px 25px 10px 10px;
-    transition-duration: 500ms;
-    transition-delay: 200ms;
-    transition-timing-function: linear;
-    position: absolute;
-    opacity: 1;
-    bottom: 0;
 }
 
-.hilang {
-    bottom: -1;
-    opacity: 0;
-    transition-duration: 500ms;
-    transition-delay: 200ms;
-    transition-timing-function: linear;
-} */
-
-/* event */
-
-.materi {
-    min-height: 40vh;
-    align-items: center;
-    display: flex;
-}
-
-.materi h1 {
+.judul h1 {
     font-family: 'Poppins', sans-serif;
     margin-left: 10px;
     font-size: 30px;
     font-weight: bold;
     letter-spacing: 0.5px;
     /* font-style: italic;  */
-    /* color: rgb(255, 174, 0); */
+    /* color: rgb(255, 174  , 0); */
     color: #000000;
     border-bottom: 2px solid rgb(255, 174, 0);
 }
 
-.materi img{
-    width: 40px;
-    margin-left: 125px;
+.selengkapnya {
+    /* margin-top: -20px; */
+    background-color: red;
+    border-radius: 5px;
+    margin-right: -140px;
+}
+
+.selengkapnya h5 {
+    color: white;
+    padding: 10px
+    
     
 }
 
-.container{
-    width: 90%;
-    height: auto;
-    margin-left: 90px;
-    margin-top: -90px;
-    justify-content: center;
+.selengkapnya:hover{
+    background-color: #000;
+}
+
+.materi {
     display: flex;
-    flex-wrap: wrap;
-    
+    width: 80%;
+    margin-left: 80px;
+    margin-top: 10px;
 }
 
-.container .card{
-    width: 180px;
+.gambar {
+    margin: 20px;
+    position: relative;
+}
+
+.gambar img {
+    width: 250px;
     height: 200px;
-    margin: 21px;
-    background-color: rgb(255, 196, 1);
-    border-radius: 12px;
-    overflow: hidden;
-    box-shadow: 4px 4px 4px 0px rgba(187, 121, 0, 0.342);
-    transition: cubic-bezier(0.175, 0.885, 0, 1);
-    transition-duration: 500ms;
-}
-
-.card h2 {
-    text-align: center;
-    color: #ffffff;
-    font-size: 20px;
-    font-family: 'Poppins', sans-serif;
-    height: 45px;
-
-}
-.card img {
-    width: 190px;
-    height: 130px;
-    align-content: center;
-    padding-top: 30px;
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-bottom: 20px;
+    margin: 10px;
     border-radius: 10px;
 }
 
-.card-img-hover {
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 100%;
-    position: absolute;
-    height: 235px;
-    border-top-left-radius: 12px;
-    border-top-right-radius: 12px;
-    top: 0;
-    transition: 0.2s all ease-out;
-    transition-duration: 500ms;
+.gambar h3 {
+    width: 250px;
+   height: 70px;
+   color: #000;
+   font-family: 'Poppins', sans-serif;
+   font-size: 18px;
 }
 
-.card:hover .card-img-hover {
-    height: 100%;
-    opacity: 0.3;
-    transition-duration: 500ms;
+.tanggal {
+    color: rgba(0, 0, 0, 0.7);
+    font-size: 14px;
+    font-weight: bold;
 }
 
-.card:hover {
-    box-shadow: 0px 30px 18px -8px rgba(0, 0, 0, 0.1);
-    transform: scale(1.1, 1.1);
-    transition-duration: 500ms;
-}
 
 .container-footer {
     max-width: 1170px;
@@ -356,7 +291,7 @@ body {
     list-style: none;
   }
   .footer {
-    margin-top: 580px;
+    margin-top: 100px;
     background-color: #251a11;
     padding: 70px 0;
   }
